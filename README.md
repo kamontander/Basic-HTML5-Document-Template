@@ -8,5 +8,5 @@
 ```
 3. And also:
 ```
-  $ git push --mirror https://github.com/kamontander/<new repo names>
+  $ git push https://github.com/kamontander/<new repo names>
 ```
