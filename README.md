@@ -1,12 +1,15 @@
 # Basic-HTML5-Document-Template
 
 ## Initializing a New Project with This Template
-1. Create a new repo on GitHub
-2. In the newly created folder run:
+Create a new repo from this template on GitHub:
 ```
-  $ git clone https://github.com/kamontander/Basic-HTML5-Document-Template.git
+  $ gh repo create <new repo name> --private --template="kamontander/Basic-HTML5-Document-Template"
 ```
-3. And also:
+Either create a local folder and run:
 ```
-  $ git push --mirror https://github.com/kamontander/<new repo name>
+  $ gh repo clone kamontander/<new repo name> .
+```
+or let CLI create it for you:
+```
+  $ gh repo clone kamontander/<new repo name>
 ```
