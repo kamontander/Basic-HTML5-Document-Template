@@ -1,10 +1,10 @@
 document.addEventListener( 'DOMContentLoaded', function() {
 
-  // console.log(
-  //   '%cYour menu. \n%cAnywhere in the World.',
-  //   'font-family:"Montserrat",sans-serif;font-weight:600;font-size:20px;color:#f58220;',
-  //   'font-family:"Montserrat",sans-serif;font-weight:600;font-size:20px;color:#000;'
-  // );
+  console.log(
+    '%cCheat enabled\n%cyou wascally wabbit.',
+    'font-family:"Roboto Slab",sans-serif;font-weight:400;font-size:20px;color:#f58220;',
+    'font-family:"Roboto",sans-serif;font-weight:400;font-size:20px;color:#808080;'
+  );
 
 //  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 //  Helper Functions
@@ -24,13 +24,21 @@ document.addEventListener( 'DOMContentLoaded', function() {
     else el.className = el.className.replace( new RegExp( '\\b'+ className+'\\b', 'g' ), '' );
   }
 
+  function toggleClass( el, className ) {
+    if ( hasClass( el, className ) ) {
+      removeClass( el, className );
+    } else {
+      addClass( el, className );
+    }
+  }
+
 //  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 //  Animated Favicon ( https://github.com/dlom/favicon.js/tree/master )
 //  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
 
   favicon.animate([
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYUlEQVQ4EWNkYGD4D8RkAyaydUI1jhrAwMCCHIj//xMXIYyMjHBttAlEBQUFBkFBQbgtIDZIDBcAuRuMgV4AAwEBARQ+SB4kBgMw9SAa5BniPA5UiA3QJgyw2YRLbBi4AADqNSiBnQQ3BAAAAABJRU5ErkJggg==",
-    "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVklEQVQ4EWP8DwQMFAAmCvSCtY4awMDAghyIjIyMyFycbOSIo00gPnjwgOH9+/dwF4DYIDFsAMULMAX8/PwMAgICMC4KGy4IZTCOpkQG2kQjekjj4wMAE6oWgm3dkXAAAAAASUVORK5CYII="
+    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxMjgiIHI9IjEyOCIvPjwvc3ZnPg",
+    "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTYgMjU2Ij48ZGVmcz48c3R5bGU+LmF7ZmlsbDojZmZmO308L3N0eWxlPjwvZGVmcz48Y2lyY2xlIGNsYXNzPSJhIiBjeD0iMTI4IiBjeT0iMTI4IiByPSIxMjgiLz48L3N2Zz4="
   ], 500);
 
 });
