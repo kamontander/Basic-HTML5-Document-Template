@@ -21,9 +21,15 @@ $font-family-primary: 'Montserrat', sans-serif;
 $font-family-secondary: 'Roboto', sans-serif;
 
 // z-index
-$z-header: 10000;
-$z-menu-button: 9500;
-$z-curtain: 9000;
+$z-layers:
+  z-header-button-active,
+  z-header-logo,
+  z-header-nav,
+  z-header-modal,
+  z-header-button,
+  z-header,
+  z-main
+;
 
 // Misc
 $transition: .3s;

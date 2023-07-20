@@ -81,3 +81,12 @@
 @function rem2px( $value ) {
   @return strip-unit( $value ) * 16 + 'px';
 }
+
+//  ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+//  z-index
+//  ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+
+@function z( $layer ) {
+  $z-inverted-index: ( list.length( $z-layers ) + 1 - list.index( $z-layers, $layer ) ) * 10000;
+  @return $z-inverted-index;
+}
